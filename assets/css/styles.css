@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ffffff;
+    color: #000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@media screen and (min-width:300px) {
+    .contenedor {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 125px;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+    }
+}
+
+/*HEADER------*/
+.contenedor header {
+    grid-area: header;
+}
+
+.encabezado {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.LOGO {
+    width: auto;
+}
+
+.navbar a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000;
+}
+
+.navbar a:hover {
+    color: blue;
+    transition: 0.4s;
+}
+
+.navbar li {
+    padding: 5px;
+}
+
+/*MAIN----*/
+
+.contenedor main {
+    grid-area: main;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 80vh;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../img/FONDO.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.banner button {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: rgb(79, 124, 182);
+}
+
+.banner button:hover {
+    background-color: blueviolet;
+    transition: 0.4s;
+}
+
+.contenido h1 {
+    color: #ffffff;
+    font-size: 50px;
+}
+
+/*FOOTER----*/
+
+.contenedor footer {
+    grid-area: footer;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media screen and (min-width: 754px) {
+    .contenedor {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 125px;
+    }
+
+    .encabezado {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar li {
+        list-style: none;
+        display: inline-block;
+        font-size: 18px;
+        margin-right: 20px;
+    }
+
+    .contenedor footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+    }
+}
+
+/*CONTACTOS*/
+@media screen and (min-width:300px) {
+    .contenedor {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 125px;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+    }
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 90vh;
+    justify-content: center;
+    background:rgb(144, 144, 165);
+}
+
+.main-form {
+    width: 400px;
+    color: #ffffff;
+    background-color: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.main-form h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.form-input {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    color: #ffffff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+.main-form .mensaje {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    color: #ffffff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    resize: none;
+}
+
+.main-form .boton {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+
+}
