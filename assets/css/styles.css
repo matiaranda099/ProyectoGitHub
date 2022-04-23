@@ -33,8 +33,10 @@ body {
     text-align: center;
 }
 
-.LOGO {
-    width: auto;
+
+.LOGO:hover{
+    transition: all 500ms;
+    transform: scale(1.2);
 }
 
 .navbar a {
