@@ -32,8 +32,10 @@ body {
     text-align: center;
 }
 
-.LOGO {
-    width: auto;
+
+.LOGO:hover{
+    transition: all 500ms;
+    transform: scale(1.2);
 }
 
 .navbar a {
@@ -258,6 +260,7 @@ main .ventas{
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    
     
 }
 .carta:nth-child(2){
