@@ -217,6 +217,16 @@ main .ventas{
             "footer";
     }
 }
+
+@media screen and (max-width:1350px) {
+    .Productos{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+
 .Destacados{
     background-color: rgb(133, 154, 173);
     text-align: center;
@@ -242,6 +252,7 @@ main .ventas{
 }
 .Productos{
     display: flex;
+    /*flex-wrap: wrap;*/
 }
 .container{
     padding: 150px 12px;
